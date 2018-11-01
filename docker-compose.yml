@@ -1,0 +1,8 @@
+postgres:
+  container_name: postgis
+  restart: always
+  image: mdillon/postgis:latest
+  volumes:
+    - ./postgres-data:/var/lib/postgis/data
+  ports:
+    - "5432:5432"
