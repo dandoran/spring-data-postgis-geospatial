@@ -22,5 +22,6 @@ Start app:
 
 ```java -jar geospatial-0.0.1-SNAPSHOT.jar```
 
+![Alt text](screenshot.jpg?raw=true "Title")
 
 
