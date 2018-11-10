@@ -24,3 +24,5 @@
 /nbdist/
 /.nb-gradle/
 *application-dev.yml
+
+/src/main/resources/static/*

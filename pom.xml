@@ -61,6 +61,42 @@
 	<build>
 		<plugins>
 			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.4.0</version>
+				<executions>
+					<execution>
+						<phase>clean</phase>
+						<id>install</id>
+						<goals><goal>exec</goal></goals>
+						<configuration>
+							<executable>npm</executable>
+							<arguments>
+								<argument>install</argument>
+								<argument>--production</argument>
+								<argument>--prefix</argument>
+								<argument>src/main/frontend</argument>
+							</arguments>
+						</configuration>
+					</execution>
+
+					<execution>
+						<phase>clean</phase>
+						<id>build</id>
+						<goals><goal>exec</goal></goals>
+						<configuration>
+							<executable>npm</executable>
+							<arguments>
+								<argument>run</argument>
+								<argument>build</argument>
+								<argument>--prefix</argument>
+								<argument>src/main/frontend</argument>
+							</arguments>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>

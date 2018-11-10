@@ -6,3 +6,5 @@ spring:
         driver-class-name: org.postgresql.Driver
 spring.jpa.database-platform: org.hibernate.spatial.dialect.postgis.PostgisDialect
 spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation: true
+mapbox:
+    apikey: <insert-apikey>

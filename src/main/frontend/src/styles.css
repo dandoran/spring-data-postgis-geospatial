@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+.marker:before {
+  content: "\f276"; /* this is your text. You can also use UTF-8 character codes as I do here */
+  font-family: FontAwesome;
+  font-size: 25px;
+}

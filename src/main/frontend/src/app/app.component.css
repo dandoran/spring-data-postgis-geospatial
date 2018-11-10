@@ -1,0 +1,9 @@
+#map {
+  height: 100vh;
+  padding: 0px 0px 0px 0px;
+}
+.marker:before {
+  content: "\f276"; /* this is your text. You can also use UTF-8 character codes as I do here */
+  font-family: FontAwesome;
+  font-size: 25px;
+}
